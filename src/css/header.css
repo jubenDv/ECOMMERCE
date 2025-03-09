@@ -1,0 +1,254 @@
+/* Global Header Styles */
+body {
+    background: #eaeaea;
+}
+.header {
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }
+
+  .header-nav {
+    background: white;
+    padding: 0 20px;
+}
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav ul li {
+    color: black;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: relative;
+    font-size: smaller;
+}
+
+/* Hover effect */
+.header-nav ul li:hover {
+ 
+}
+
+/* Dropdown styling */
+/* Dropdown Styling */
+.header-dropdown {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.header-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.header-dropdown:hover .header-dropdown-menu {
+  display: flex; /* Show dropdown on hover */
+}
+
+.header-dropdown-menu li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.3s ease;
+}
+
+.header-dropdown-menu li:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.header-dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  display: block;
+}
+
+.header-dropdown-menu li:hover {
+  
+}
+
+.header-dropdown-menu li a:hover {
+  text-decoration: underline;
+}
+
+.nav-link {
+  font-size: smaller;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  /* font-weight: bold; */
+  transition: color 0.3sease;
+}
+
+.nav-link:hover {
+
+}
+
+li.d {
+  margin-bottom: -20px;
+  padding: 20px;
+  color: red;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", 微軟正黑體, "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+  }
+  
+  /* Mini Header */
+  .header-mini {
+    background: #f55a00;
+    padding: 5px 20px;
+    font-size: 14px;
+  }
+  
+  .header-mini .container {
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header-mini .header-login, 
+  .header-mini .header-logout {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .header-mini .header-logout {
+    font-weight: bold;
+  }
+  
+  /* Main Header */
+  .header-main {
+    background: #ff5722;
+    padding: 15px 0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .header-logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .header-logo img {
+    top: 9px;
+    padding: 0;
+    padding-top: -89px;
+    width: 180px;
+    margin-top: -18px;
+    margin-bottom: -16px;
+    padding-top: -19px;
+}
+  
+.header-search {
+  margin: 0 auto;
+  height: 47px;
+  display: flex
+;
+  width: 67%;
+}
+  
+  .header-search input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+  }
+  
+  .header-search button {
+    background: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .header-cart {
+    margin-top: -7px;
+    text-align: center;
+    /* width: 79px; */
+    margin-right: 74px;
+    font-size: 34px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    place-content: center;
+}
+  
+  /* Cart Badge */
+  .cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: white;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+}
+.header-search-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 96%; /* Adjust as needed */
+  left: 50%; /* Move to the center */
+  transform: translateX(-50%); /* Shift back by half its width */
+  
+  width: 763px;
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+
+.search-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.search-dropdown li:hover {
+  background: #f5f5f5;
+}
+  

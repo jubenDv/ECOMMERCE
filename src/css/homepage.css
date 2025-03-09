@@ -1,0 +1,200 @@
+/* Homepage Container */
+.homepage-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* General Styles */
+.homepage-home-page {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.homepage-brand-cards {
+  margin-bottom: 40px;
+  display: flex;
+  padding-bottom: 9px;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  overflow-x: auto;
+  gap: 19px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.homepage-brand-cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Full-width container */
+.homepage-carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.homepage-brand-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: -37px;
+}
+
+.homepage-discover {
+  background: antiquewhite;
+  padding: 20px;
+}
+
+.homepage-discover-container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.scroll-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.scroll-btn.left {
+  text-align: center;
+  font-size: 25px;
+  height: 49px;
+  border-radius: 15px;
+  width: 48px;
+  left: -21px;
+}
+
+.scroll-btn.right {
+  text-align: center;
+  font-size: 25px;
+  height: 49px;
+  right: -20px;
+  border-radius: 15px;
+  width: 48px;
+}
+
+/* Center the image fully */
+.homepage-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Make images full-width */
+.homepage-carousel-image {
+  max-width: 1440px;
+  height: auto;
+  object-fit: cover;
+  display: none;
+}
+
+/* Show only active image */
+.homepage-carousel-image.active {
+  display: block;
+}
+
+/* Dots positioned inside the image */
+.homepage-carousel-dots {
+  position: absolute;
+  bottom: 15px; /* Moves dots up from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+/* Dots styling */
+.homepage-carousel-dot {
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active dot */
+.homepage-carousel-dot.active {
+  background-color: yellow;
+  width: 14px;
+  height: 14px;
+}
+
+.homepage-brand-image {
+  width: 140px;
+  height: 114px;
+  object-fit: cover;
+  margin-bottom: 36px;
+}
+
+.homepage-brand-card {
+  place-content: end;
+  height: 250px;
+  font-size: x-small;
+  min-width: 189px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.homepage-brand-card:hover {
+  transform: scale(1.05);
+}
+
+/* Product Cards */
+.homepage-product-cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.homepage-product-card {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.homepage-product-card:hover {
+  transform: scale(1.05);
+}
+
+.homepage-product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .homepage-container {
+    padding: 10px;
+  }
+  
+  .homepage-brand-cards,
+  .homepage-product-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
